@@ -57,3 +57,5 @@ class GoogleSearch:
             description = "".join(description_div) if description_div else None
             results.append({"title": title, "link": link, "description": description})
         return results
+
+

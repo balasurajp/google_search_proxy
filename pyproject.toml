@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+  "setuptools>=68",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-search-proxy"
+version = "0.1.0"
+description = "Google search helper with optional proxy rotation and randomized User-Agent"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [
+  { name = "Cosette" }
+]
+keywords = ["google", "search", "proxy", "scraping", "user-agent"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+  "requests",
+  "parsel",
+  "free-proxy",
+]
+
+[project.urls]
+Homepage = "https://github.com/balasurajp/google_search_proxy"
+Repository = "https://github.com/balasurajp/google_search_proxy"
+
+[tool.setuptools]
+packages = ["google_search_proxy"]
+
